@@ -24,7 +24,7 @@ from [Order]as o
 join OrderDetail as od on o.id = od.OrderId 
 join Product as p on od.ProductId = p.id
 where o.id = 10251;
- --Com back to this ^^^^^^^^^^^^
+ORDER BY p.ProductName ASC
 -- Display the OrderID, Customer's Company Name and the employee's LastName for every order. All columns should be labeled clearly. Displays 16,789 records.
 SELECT 
     o.Id as OrderId
